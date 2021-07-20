@@ -1,0 +1,8 @@
+# DIRS
+
+dist/
+node_modules/
+
+# FILES
+
+.env
