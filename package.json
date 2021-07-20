@@ -1,0 +1,40 @@
+{
+  "name": "webpack-express-server",
+  "version": "1.0.0",
+  "description": "webpack-express-server :)",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "exit 0",
+    "build": "webpack && cp package.json dist/package.json && cp .env.sample dist/.env",
+    "start": "npm run build && node dist/index.js --open",
+    "deploy": "npm run build && gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cartory/webpack-express-server.git"
+  },
+  "keywords": [
+    "webpack",
+    "express",
+    "gh-pages",
+    "heroku"
+  ],
+  "author": "cartory",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cartory/webpack-express-server/issues"
+  },
+  "homepage": "https://github.com/cartory/webpack-express-server#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "gh-pages": "^3.2.3",
+    "morgan": "^1.10.0",
+    "webpack": "^5.45.1",
+    "webpack-cli": "^4.7.2",
+    "webpack-node-externals": "^3.0.0"
+  }
+}
