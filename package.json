@@ -7,7 +7,7 @@
     "test": "exit 0",
     "build": "webpack && cp package.json dist/package.json && cp .env.sample dist/.env",
     "heroku-postbuild": "echo Skip builds on Heroku",
-    "start": "npm run build && node dist/index",
+    "start": "node index",
     "deploy": "npm run build && gh-pages -d dist"
   },
   "repository": {
