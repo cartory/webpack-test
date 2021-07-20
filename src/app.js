@@ -11,6 +11,6 @@ app
     .use(express.json({ limit: process.env.BODY_SIZE }))
 
     // ROUTES
-    .use('/', (_, res) => res.send('<h1>Welcome to SERVER </h1>'))
+    .get('/', (_, res) => res.send('<h1>Welcome to SERVER </h1>'))
 
 module.exports = app

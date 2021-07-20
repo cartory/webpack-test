@@ -5,7 +5,6 @@
   "main": "src/index.js",
   "scripts": {
     "test": "exit 0",
-    "build": "webpack && cp heroku.json dist/package.json && cp .env.sample dist/.env",
     "start": "node index.js",
     "deploy": "npm run build && gh-pages -d dist"
   },
@@ -14,12 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/cartory/webpack-express-server.git"
   },
-  "keywords": [
-    "webpack",
-    "express",
-    "gh-pages",
-    "heroku"
-  ],
+  "keywords": ["webpack", "express", "gh-pages", "heroku"],
   "author": "cartory",
   "license": "MIT",
   "bugs": {
