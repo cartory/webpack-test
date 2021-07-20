@@ -9,7 +9,7 @@
     "start": "node index.js",
     "deploy": "npm run build && gh-pages -d dist"
   },
-  "heroku-run-build-script": true,
+  "heroku-run-build-script": false,
   "repository": {
     "type": "git",
     "url": "git+https://github.com/cartory/webpack-express-server.git"
